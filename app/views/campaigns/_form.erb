@@ -1,0 +1,14 @@
+<%= form_for @campaign do |campaign| %>
+  <%= campaign.label :name %>
+  <%= campaign.text_field :name %><br><br>
+  <%= campaign.label :recipient_count %>
+  <%= campaign.text_field :recipient_count %><br><br>
+	<%= campaign.label :mailing_date %>
+	<%= campaign.date_select :mailing_date, start_year: 1970, end_year: Date.today.year %><br><br>
+  <%= campaign.label :paper_format %>
+  <%= campaign.text_field :paper_format %><br><br>
+  <%= campaign.label :postage_type %>
+  <%= campaign.text_field :postage_type %><br><br>
+
+  <%= campaign.submit %>
+<% end %>
