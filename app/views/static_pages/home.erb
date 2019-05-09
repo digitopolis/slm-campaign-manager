@@ -1,0 +1,9 @@
+<h1>This is the home page</h1>
+
+<div class="client-list">
+	<ul>
+		<% @clients.each do |client| %>
+			<li><%= client.name %></li><br>
+		<% end %>
+	</ul>
+</div>
