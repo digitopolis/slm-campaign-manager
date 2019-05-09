@@ -1,1 +1,10 @@
 <h1><%= @campaign.name %></h1>
+<ul>
+	<li>Client: <%= @client.name %></li>
+	<li>Recipient Count: <%= @campaign.recipient_count %></li>
+	<li>Mailing Date: <%= @campaign.mailing_date%></li>
+	<li>Estimated In-Home Date: <%= @campaign.estimated_in_home_date%></li>
+	<li>Paper Format: <%= @campaign.paper_format%></li>
+	<li>Postage Type: <%= @campaign.postage_type%></li>
+	<li>Cost: <%= number_to_currency(@campaign.cost)%></li>
+</ul>

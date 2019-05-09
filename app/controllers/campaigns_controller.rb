@@ -2,6 +2,7 @@ class CampaignsController < ApplicationController
 	before_action :find_campaign, only: [:show]
 
 	def show
+		@client = @campaign.client
 	end
 
 	def new
