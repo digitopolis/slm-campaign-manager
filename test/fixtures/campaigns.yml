@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  recipient_count: 1
+  mailing_date: 2019-05-09
+  paper_format: MyString
+  postage_type: MyString
+  client: one
+
+two:
+  name: MyString
+  recipient_count: 1
+  mailing_date: 2019-05-09
+  paper_format: MyString
+  postage_type: MyString
+  client: two
